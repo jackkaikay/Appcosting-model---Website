@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	
+		<meta name="viewport" content="user-scalable=0"/>
+	
+		<link rel="stylesheet" type="text/css" Href="css/style2.css"/> 
+        <link rel="stylesheet" type="text/css" Href="css/font-awesome.min.css"/> 
+		<link rel="stylesheet" type="text/css" Href="css/bootstrap.min.css"/> 
+		
+		<script  type="text/javascript" src="js/jquery.js"></script> 
+		<script  type="text/javascript" src="js/bootstrap.min.js"></script> 
+		
+		
+		<title> App Costing Model </title>
+			
+		<link rel="icon" type="image/png" href="images/rcu_logo.png" />
+        
+	</head>
+	<body class="new-rcu-mides homepage">
+
+		<div class="header-container">
+			
+			<div class="row"> 		
+				<a href="http://rcu.co.uk" target="_blank"> 
+					<img class="rcumainlogo" src="images/rcu_logo.png" alt="RCU Logo" /> 
+				</a> 
+				
+					
+			</div>
+		</div>
+			
+		<div class="container-fluid">
+			
+			<div class="row">
+				
+				<div class="col-sm-12 col-md-12 col-lg-12" > 
+				
+					<h1 style="text-align: left;">Apprenticeship Planning and Strategy Costing Calculator</h1>
+				
+				</div>
+				
+				<div class="col-sm-12 col-md-12 col-lg-4" > 
+						
+					<h2>INCOME</h2>
+						
+					<!-- Income Table    --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Income</th>           
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td>Funding cap</td>
+								<td>&pound;5,000</td>
+							</tr>					
+							
+							<tr>
+								<td>Actual fee charged to employer</td>
+								<td><input type="number" class="form-control input" data-id="a2" value="" placeholder="e.g. 5000"/></td>
+								
+							</tr>	
+								
+							<tr>
+								<td>Length of programme (Years)</td>
+								<td><input type="number" class="form-control input" data-id="a3" value="" placeholder="e.g. 1"/></td>
+							</tr>
+							
+							<tr class="output">
+								<td>Annual income per candidate</td>
+								<td class="output_a4"></td>	
+							</tr>	
+						</tbody>
+					</table>	
+						
+					<!-- Volume Ttable --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Volume</th>           
+						</thead>
+						<tbody>
+							<tr>
+								<td>Total equivalent on programme full year learner</td>
+								<td><input type="number" class="form-control input" data-id="a5"  value="" placeholder="e.g. 50"/></td>
+							</tr>				
+						</tbody>
+					</table>			
+							
+				<!-- Total Income Table --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Total Income</th>           
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td>Total income</td>
+								<td class="output_a6"></td>
+							</tr>				
+						</tbody>
+					</table>			
+							
+				</div>			
+						
+				<!-- Col 2 --> 		
+				<div class="col-sm-12 col-md-12 col-lg-4" >
+						
+					<h2>DIRECT COSTS</h2>	
+					
+					<!-- Workplaced Assesment Costs  --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Workplaced Assessment Costs</th>           
+						</thead>
+						<tbody>
+							<tr>
+								<td>Candidate vist hours per month</td>
+								<td><input type="number" class="form-control input" data-id="b1"  value="" placeholder="e.g. 2"/></td>
+							</tr>					
+							
+							<tr>
+								<td>Candidate additional support hours per month</td>
+								<td><input type="number" class="form-control input" data-id="b2"  value="" placeholder="e.g. 2"/></td>
+								
+							</tr>	
+								
+							<tr>
+								<td>Assessor hourly rate</td>
+								<td><input type="number" class="form-control input" data-id="b3" value="" placeholder="e.g. 15"/></td>
+							</tr>
+							
+							<tr class="output">
+								<td>Assessor fee per candidate per year</td>
+								<td class="output_b4"></td>	
+							</tr>	
+							
+						</tbody>
+					</table>
+						
+					<!-- Classroom based Costs --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Classroom Based Costs</th>           
+						</thead>
+						<tbody>
+							<tr>
+								<td>Classroom based hours peer week	</td>
+								<td><input type="number" class="form-control input" data-id="b5" value="" placeholder="e.g. 6"/></td>
+							</tr>					
+							
+							<tr>
+								<td>Lecturer salary + NI</td>
+								<td><input type="number" class="form-control input" data-id="b6" value="" placeholder="e.g. 42000"/></td>
+								
+							</tr>	
+								
+							<tr>
+								<td>Annual teaching hours</td>
+								<td><input type="number" class="form-control input" data-id="b7" value="" placeholder="e.g. 840"/></td>
+							</tr>
+							
+							<tr class="output">
+								<td>Hourly rate </td>
+								<td class="output_b8"> </td>	
+							</tr>	
+							
+							<tr>
+								<td>Class size </td>
+								<td> <input type="number" class="form-control input" data-id="b9" value="" placeholder="e.g. 12"/> </td>	
+							</tr>	
+							
+							<tr>
+								<td>Number of teaching weeks </td>
+								<td> <input type="number" class="form-control input" data-id="b10" value="" placeholder="e.g. 36"/> </td>	
+							</tr>	
+							
+							<tr class="output">
+								<td>Annual classroom costs per student</td>
+								<td class="output_b11"></td>	
+							</tr>	
+							
+						
+							
+						</tbody>
+					</table>
+								
+					<!-- Other Direct Costs --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Other Direct Costs</th>           
+						</thead>
+						<tbody>
+							<tr>
+								<td>End point asessment and registration fees	</td>
+								<td><input type="number" class="form-control input" data-id="b12" value="" placeholder="e.g. 500"/></td>
+							</tr>					
+							
+							<tr>
+								<td>Direct materials costs, software fees etc.</td>
+								<td><input type="number" class="form-control input" data-id="b13" value="" placeholder="e.g. 100"/></td>
+								
+							</tr>	
+								
+							<tr>
+								<td>Other costs</td>
+								<td><input type="number" class="form-control input" data-id="b14" value="" placeholder="e.g. 0"/></td>
+							</tr>
+							
+							<tr class="output">
+								<td>Other direct costs</td>
+								<td class="output_b15"></td>	
+							</tr>	
+							
+							<tr>
+							
+						</tbody>
+					</table>
+							
+					<!-- Total Direct Costs Per Candidate  --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Total Direct Costs Per Candidate</th>           
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td>Total direct costs per candidate </td>
+								<td class="output_b16"></td>
+							</tr>					
+						</tbody>
+					</table>	
+										
+					<!-- Total Direct Cost  --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2"> Total Direct Cost</th>           
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td>Total direct cost</td>
+								<td class="output_b17"></td>
+							</tr>					
+							
+							
+						</tbody>
+					</table>
+					
+				</div>
+								
+			
+					
+
+					
+				<div class="col-sm-12 col-md-12 col-lg-4" >
+					
+					<h2>INDIRECT COSTS</h2>	
+					
+					<!-- Apprenticeship Management Service Indirect Costs  --> 
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Apprenticeship Management Service Indirect Costs</th>           
+						</thead>
+						<tbody>
+							<tr>
+								<td>Management cost (equivalent of 1.5 FTE) </td>
+								<td><input type="number" class="form-control input" data-id="c1"  value="" placeholder="e.g. 100000"/></td>
+							</tr>					
+							
+							<tr>
+								<td>Office costs per annum</td>
+								<td><input type="number" class="form-control input" data-id="c2" value="" placeholder="e.g. 10000"/></td>
+							</tr>					
+							
+							<tr>
+								<td>Other costs</td>
+								<td><input type="number" class="form-control input" data-id="c3" value="" placeholder="e.g. 5000"/></td>
+							</tr>					
+							
+							<tr class="output">
+								<td>Management cost per candidate</td>
+								<td class="output_c4"></td>
+							</tr>					
+							
+						
+						</tbody>
+					</table>
+				
+				
+					<!-- Centeral College Overhead Costs  --> 
+				
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Centeral College Overhead Costs</th>           
+						</thead>
+						<tbody>
+							<tr>
+								<td>Percentage markup on total costs </td>
+								<td><input type="number" class="form-control input" data-id="c5" placeholder="e.g. 30%" value=""/></td>
+							</tr>					
+							
+							<tr class="output">
+								<td>Central college overhead costs</td>
+								<td class="output_c6"></td>
+							</tr>					
+							
+						</tbody>
+					</table>
+				
+					<!-- Total Indirect Cost Per Candidate  --> 
+					
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Total Indirect Cost Per Candidate</th>           
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td>Total indirect cost per candidate</td>
+								<td class="output_c7"></td>
+							</tr>					
+							
+						</tbody>
+					</table>
+				
+					<!-- Total Indirect Cost  --> 
+				
+					<table class="table table-bordered table-highlight table-responsive">
+						<thead>
+							<th class="HeadWit" colspan="2">Total Indirect Cost</th>           
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td>Total indirect cost </td>
+								<td class="output_c8"></td>
+							</tr>					
+							
+						</tbody>
+					</table>
+					
+					<h2>TOTAL NET INCOME</h2>	
+					
+					<table class="table table-bordered table-highlight table-responsive fancy">
+						<thead>
+							<tr>
+								<th height="60" class="HeadWit" colspan="2">Total Net Income</th> 
+							</tr>  
+						</thead>
+						<tbody>
+							<tr class="output">
+								<td height="60" >Total net income</td>
+								<td class="output_d1"></td>
+							</tr>					
+							
+						</tbody>
+					</table>
+				
+				</div>	
+				
+			</div>
+			
+		</div>
+			
+		<footer>
+			
+			<div class="footer-container"> 
+				<span class ="fontfooter"> 
+					<a href="http://rcu.co.uk" target="_blank"> 
+						<img  class="rculogo" src="images/rcu_logo.png" alt="RCU Logo" />
+					</a> 
+					<p> RCU Ltd, Unit 3 Tustin Court, Port Way, Ashton on Ribble, Preston, PR2 2YQ </p> 
+					<p> Phone: <a href="tel:01772734855">01772 734855</a> | <a href="mailto:enquiries@rcu.co.uk">enquiries@rcu.co.uk</a> </p> 
+					
+				</span> 
+			</div> 
+			
+			
+			<div class="footer-containerlower"> 
+				
+				<p class="fontrculink"> RCU LTD © </p> 
+				
+			</div> 
+				
+		</footer>
+		
+		<script type="text/javascript">
+			$(function() {
+			
+				setTimeout(function() {
+				
+					$(this).calculations();
+				
+				}, 0);
+				
+				$('.input').keyup(function() {
+				
+					$(this).calculations();
+				
+				});
+			
+			
+				$.fn.calculations = function() {
+				
+					// Calculation 1
+					
+					var input_a2 = (($.isNumeric($('.input[data-id="a2"]').val())) ? $('.input[data-id="a2"]').val() : 0); 
+					var input_a3 = (($.isNumeric($('.input[data-id="a3"]').val())) ? $('.input[data-id="a3"]').val() : 0);
+					var output_a4;
+					
+					if (input_a2 == 0 || input_a3 == 0) {
+						output_a4 = 0;
+					}
+					else {
+						output_a4 = Math.round(input_a2 / input_a3, 2);
+					}
+					
+					$('.output_a4').html("&pound;" + Number(output_a4).toLocaleString('en'));
+					
+					// Calculation 2
+				
+					var input_a5 = (($.isNumeric($('.input[data-id="a5"]').val())) ? $('.input[data-id="a5"]').val() : 0);
+					
+					var output_a6;
+					
+					output_a6 = Math.round(output_a4 * input_a5, 2);
+					
+					$('.output_a6').html("&pound;" + Number(output_a6).toLocaleString('en'));
+				
+					// Calculation 3
+					
+					var input_b1 = (($.isNumeric($('.input[data-id="b1"]').val())) ? parseFloat($('.input[data-id="b1"]').val()) : 0);
+					var input_b2 = (($.isNumeric($('.input[data-id="b2"]').val())) ? parseFloat($('.input[data-id="b2"]').val()) : 0);
+					var input_b3 = (($.isNumeric($('.input[data-id="b3"]').val())) ? parseFloat($('.input[data-id="b3"]').val()) : 0);
+					
+					var output_b4;
+					
+					output_b4 = Math.round(((input_b3 * (input_b1 + input_b2) * 12)),  2);
+					
+					$('.output_b4').html("&pound;" + Number(output_b4).toLocaleString('en'));
+					
+					// calculation 4 
+					
+					var input_b6 = (($.isNumeric($('.input[data-id="b6"]').val())) ? $('.input[data-id="b6"]').val() : 0);
+					var input_b7 = (($.isNumeric($('.input[data-id="b7"]').val())) ? $('.input[data-id="b7"]').val() : 0);
+					
+					var output_b8;
+					
+					if (input_b6 == 0 || input_b7 == 0) {
+						output_b8 = 0;
+					}
+					else {
+						output_b8 = Math.round(input_b6 / input_b7, 2);
+					}
+					
+					
+					$('.output_b8').html("&pound;" + Number(output_b8).toLocaleString('en'));
+					
+					// Calculation 5
+					
+					var input_b5 = (($.isNumeric($('.input[data-id="b5"]').val())) ? $('.input[data-id="b5"]').val() : 0);
+					
+					var input_b9 = (($.isNumeric($('.input[data-id="b9"]').val())) ? $('.input[data-id="b9"]').val() : 0);
+					var input_b10 = (($.isNumeric($('.input[data-id="b10"]').val())) ? $('.input[data-id="b10"]').val() : 0);
+			
+					var output_b11;
+					
+						if (input_b5 == 0 || output_b8 == 0 || input_b9 == 0 || input_b10 == 0) {
+						output_b11 = 0;
+					}
+					else {
+						output_b11 = Math.round((output_b8 * input_b5 * input_b10) / input_b9 , 2);
+					}
+
+					$('.output_b11').html("&pound;" + Number(output_b11).toLocaleString('en'));
+				
+					// Calculation 6
+					
+					var input_b12 = (($.isNumeric($('.input[data-id="b12"]').val())) ? parseFloat($('.input[data-id="b12"]').val()) : 0);
+					var input_b13 = (($.isNumeric($('.input[data-id="b13"]').val())) ? parseFloat($('.input[data-id="b13"]').val()) : 0);
+					var input_b14 = (($.isNumeric($('.input[data-id="b14"]').val())) ? parseFloat($('.input[data-id="b14"]').val()) : 0);
+					
+								
+					var output_b15;
+							
+					output_b15 = Math.round (input_b12 + input_b13 + input_b14, 2);
+					
+					$('.output_b15').html("&pound;" + Number(output_b15).toLocaleString('en'));
+					
+							
+					// Calculation 7		
+				
+					var output_b16;
+								
+					output_b16 = Math.round (output_b4 + output_b11 + output_b15, 2);
+										
+					$('.output_b16').html("&pound;" + Number(output_b16).toLocaleString('en'));		
+						
+					// Calculation 8	
+					
+					var output_b17;
+				
+					output_b17 = Math.round (output_b16 * input_a5, 2);								
+					
+					$('.output_b17').html("&pound;" + Number(output_b17).toLocaleString('en'));
+					 
+					// Calculation 9 
+					
+					var input_c1 = (($.isNumeric($('.input[data-id="c1"]').val())) ? parseFloat($('.input[data-id="c1"]').val()) : 0);
+					var input_c2 = (($.isNumeric($('.input[data-id="c2"]').val())) ? parseFloat($('.input[data-id="c2"]').val()) : 0);
+					var input_c3 = (($.isNumeric($('.input[data-id="c3"]').val())) ? parseFloat($('.input[data-id="c3"]').val()) : 0);
+			
+					var output_c4;
+					
+					if (input_c1 == 0 || input_c2 == 0 || input_a5 == 0) {
+						output_c4 = 0;
+					}
+					else {
+						output_c4 = Math.round((input_c1 + input_c2 + input_c3) / input_a5 , 2);
+					}
+					
+					$('.output_c4').html("&pound;" + Number(output_c4).toLocaleString('en'));
+					
+					
+					// calculation 10 
+					
+					var input_c5 = (($.isNumeric($('.input[data-id="c5"]').val())) ? parseFloat($('.input[data-id="c5"]').val()) / 100 : 0);
+					
+					var output_c6;
+					
+					output_c6 = Math.round((input_c5 * (output_b16 + output_c4)),  2);
+					
+					$('.output_c6').html("&pound;" + Number(output_c6).toLocaleString('en'));
+					
+							
+					// calculation 11
+					
+					var output_c7;
+				
+					output_c7 = Math.round (output_c4 + output_c6, 2);								
+					
+					$('.output_c7').html("&pound;" + Number(output_c7).toLocaleString('en'));
+					
+					
+					// calculation 12
+					
+					var output_c8;
+				
+					output_c8 = Math.round (output_c7 * input_a5, 2);								
+					
+					$('.output_c8').html("&pound;" + Number(output_c8).toLocaleString('en'));
+					
+					// calculation 12
+					
+					var output_d1;
+				
+					output_d1 = Math.round (output_a6 - output_b17 - output_c8, 2);								
+					
+					$('.output_d1').html("&pound;" + Number(output_d1).toLocaleString('en'));
+					
+					if (output_d1 > 0) {
+						$('.output_d1').css({"color": "green"});
+					}
+					else {
+						$('.output_d1').css({"color": "red"});
+					}
+					
+				};
+			
+			});
+		</script>
+			
+	</body>
+	
+</html>	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		

@@ -1,0 +1,229 @@
+body {
+    display: inline;
+    margin: 0px;
+	font-family: "museo-sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+
+}
+
+.fonthed { color: #64838e; 
+	font-family: Arial;
+	font-size: 20px; 
+	margin-left: 700px;
+}
+#image_wrapper {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 310px;
+	overflow: hidden;
+	
+}
+.Headerone {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #FFFFFF; 
+	font-size: 32px; 
+	margin-top: 0px; 
+	font-weight: bold;
+	padding-bottom: 300px;
+}
+.header_image {
+	position: relative;
+	top: -125px;
+	width: 100%;
+	
+}
+.font3 {
+	color: #64838e; 
+	font-size: 26px; 
+	margin-top: 0px; 
+	font-weight: bold;
+	padding-bottom: 300px;
+}	
+.font6 {
+	color: #FFF; 
+	font-size: 18px; 
+	
+}	
+.fontbgnotes { 
+    color: #000000; 
+	font-size: 16px;
+	
+}
+.textsizebig {
+	font-size: 16px; 
+}
+.netincome {
+	text-align: center;
+}
+.fontbgnotes2 { 
+    color: #000000; 
+	font-size: 22px;
+	text-decoration: underline;
+} 
+.font4 {
+	color: #64838e; 
+	font-size: 26px; 
+	margin-bottom: 4px;
+	
+}	
+.fontleftm {
+	
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	
+	color: #64838e; 
+	font-size: 14px; 
+	
+}	
+.fontfooter {
+	display: block;
+	color: #fff; 
+	font-size: 14px; 
+	text-align: center;
+	padding-bottom: 0px; 
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+} 
+.fontrculink {
+	color: #fff; 
+	font-size: 14px; 
+	text-align: center;
+	margin: 0px;
+	padding-top: 20px;
+}
+.header-container {	
+	height: 110px;
+	width: 100%;
+	margin-bottom: 2.5rem;
+	Background: #333;
+	
+
+}
+
+.table td:first-child {
+	width: 72%;
+}
+
+.footer-container {
+	height: 173px;
+	width: 100%;
+    padding-top: 2.0rem;	
+	margin-top: 120px;
+	padding-bottom: 0rem;
+	background: #333;;
+}
+.footer-containerlower { 
+	height: 65px;
+	width: 100%;
+	background: #666; 
+
+}
+
+
+.rculogo {
+	margin-top: 0px; 
+	height: 60px;
+	padding-bottom: 5px;
+} 
+.body {
+	    background: #eaeaea;
+    margin-left: auto;	
+	margin-right: auto;
+	height: 500px;
+	width: 50%; 
+	margin-bottom: 100px;
+	padding: 20px; 
+} 
+.smallmargin {
+margin-top: 0.625rem !important; }
+
+.header-container .row {
+	margin: 0px;
+	text-align: center;
+}
+.rcumainlogo {
+	margin-top: 0px; 
+	
+	height: 90px;
+	padding-top: 15px;
+	padding-bottom: 0px; 
+	
+	
+}
+
+.table th {
+	background-color: #333333;
+	color: #ffffff;
+	
+}
+
+.table tr.output {
+	background-color: #dddddd;
+}
+
+h1 {
+		
+	font-size: 40px !important;
+	
+}
+
+h2 {
+		
+	font-size: 20px !important;
+	
+}
+
+@media screen and (max-width: 1280px) {
+	
+	body {
+		font-size: 36px ; 
+	}
+
+	.table td, .table th, .table td input, .fontfooter { 
+		font-size: 28px; 
+	}
+
+	.table td input { 
+		height: 50px;
+	}
+
+	.footer-container {
+		height: 300px;
+	}
+	
+	h1 {
+		
+		font-size: 60px !important;
+		
+	}
+	
+	h2 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-weight: bold;
+		font-size: 50px !important;
+	}
+	
+	.table {
+		margin-bottom: 60px !important;
+	}
+	
+	.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+		border: 1px solid #333333 !important;
+	}
+	
+	input {
+		border: 1px solid #333333 !important;
+	}
+	
+}
+
+.fancy tr th {
+	background-color: #428bca;
+}
